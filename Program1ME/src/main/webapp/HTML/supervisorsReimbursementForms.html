@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Reimbursement Form</title>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Mikaela &Co</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="supervisorHome.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="supervisorsReimbursementForms.html">Submit A Form</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="viewPendingForms.html">Pending Forms</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="UpdateGradeSupervisor.html">Update Your Final Grade</a>
+                        </li>
+                         <li class="nav-item">
+                        <a class="nav-link" href="approveFinalGrade.html">Approve Final Grade</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="logout">Logout</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Have A Wonderful Day!
+                    </span>
+                </div>
+    	</nav>  
+  </head>
+  <body>
+    <br><br><br>
+    <div class="container">
+        <div class="col-6">
+            <form action="reimbursement" method="post">
+                <div class="form-group">
+                    <label for="inputAddress">Location</label>
+                    <input type="text" name="location" class="form-control" id="inputLocation">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-6">
+                    <label for="eventType">Event Type</label>
+                        <select name="eventPayback" class="form-control" id="eventType">
+                            <option>University Course</option>
+                            <option>Seminar</option>
+                            <option>Certification Prep Class</option>
+                            <option>Certification</option>
+                            <option>Technical Training</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="eventTime">Event Time</label>
+                      <input type="text" name="eventTime" class="form-control" id="time" placeholder="HH:mm">
+                    </div>
+                    <div class="form-group col-md-2">
+                      <label for="dayTime"> <br/> </label>
+                      <select name="AMPM" id="dayTime" class="form-control">
+                        <option selected>AM</option>
+                        <option>PM</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="eventDate">Event Date</label>
+                      <input type="text" name= "eventDate" class="form-control" id="eventDate" max="9999-12-31" placeholder="YYYY-MM-DD">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="eventCost">Event Cost</label>
+                      <input type="text" name="cost" class="form-control" id="eventCost" placeholder="100.00">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="gradingFormat">Grading Format</label>
+                            <select name="grading" id="gradingFormat" class="form-control">
+                              <option selected>A-F</option>
+                              <option>0-100</option>
+                              <option>Pass/Fail</option>
+                              <option>Other</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="gradingFormat">Passing Grade</label>
+                            <input type="type" name="passing" id="passingGrade" class="form-control">  
+                          </div>
+                      <div class="form-group col-12">
+                        <label for="eventDescription">Event Description</label>
+                        <textarea  name="description" class="form-control" id="description" rows="3" placeholder="Please enter a brief description"></textarea>
+                      </div>
+                      <div class="form-group col-md-3">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+            </form>
+        </div>
+    </div>   
+        
+    
+            
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
