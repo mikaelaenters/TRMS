@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>Program1ME</display-name>
+ 	
+ 	<servlet>
+	 	<servlet-name>loginServlet</servlet-name>
+	 	<servlet-class>com.revature.servlets.LoginServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>loginServlet</servlet-name>
+ 		<url-pattern>/HTML/login</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+	 	<servlet-name>reimbursementServlet</servlet-name>
+	 	<servlet-class>com.revature.servlets.ReimbursementServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>reimbursementServlet</servlet-name>
+ 		<url-pattern>/HTML/reimbursement</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+	 	<servlet-name>logoutServlet</servlet-name>
+	 	<servlet-class>com.revature.servlets.LogoutServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>logoutServlet</servlet-name>
+ 		<url-pattern>/HTML/logout</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+	 	<servlet-name>viewFormsServlet</servlet-name>
+	 	<servlet-class>com.revature.servlets.ViewFormsServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>viewFormsServlet</servlet-name>
+ 		<url-pattern>/HTML/viewPendingForms</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+	 	<servlet-name>updateGradeServlet</servlet-name>
+	 	<servlet-class>com.revature.servlets.UpdateGradeServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>updateGradeServlet</servlet-name>
+ 		<url-pattern>/HTML/UpdateGrade</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+	 	<servlet-name>finalGradeServlet</servlet-name>
+	 	<servlet-class>com.revature.servlets.FinalGradeServlet</servlet-class>
+ 	</servlet>
+ 	<servlet-mapping>
+ 		<servlet-name>finalGradeServlet</servlet-name>
+ 		<url-pattern>/HTML/approveFinalGrade</url-pattern>
+ 	</servlet-mapping>
+</web-app>

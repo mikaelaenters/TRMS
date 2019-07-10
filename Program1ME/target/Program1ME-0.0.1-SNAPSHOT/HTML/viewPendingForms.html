@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ 	<title>Pending Forms</title>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Mikaela &Co</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="supervisorHome.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="supervisorsReimbursementForms.html">Submit A Form</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="viewPendingForms.html">Pending Forms</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="UpdateGradeSupervisor.html">Update Your Final Grade</a>
+                        </li>
+                         <li class="nav-item">
+                        <a class="nav-link" href="approveFinalGrade.html">Approve Final Grade</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="logout">Logout</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Have A Wonderful Day!
+                    </span>
+                </div>
+    	</nav>  
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div>
+        <div id="pendingForms">
+          <table class="table">
+            <thead class="text-center">
+              <tr>
+                <th scope="col">Form</th>
+                <th scope="col">Email</th>
+                <th scope="col">Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Date</th>
+                <th scope="col">Cost</th>
+                <th scope="col">Description</th>
+                <th scope="col">Available</th>
+                <th scope="col">Pending</th>
+                <th scope="col">Awarded</th>
+              </tr>
+            </thead>
+            <tbody id="newForms" class="text-center"></tbody>
+          </table>
+        </div>
+        <div class="container">
+        	<div class="col-6">
+        		<div class="card">
+  					<div class="card-header"></div>
+        		<div class="card-body">
+        			<h5 class="card-title">Reimbursement Requests</h5>
+    				<form id="ResponseForm">
+        				<div class="form-group col-md-6">
+            				<label for="formId">Reimbursement Form Id</label>
+            				<input type="number" name="formId" class="form-control" id="applicationId" placeholder="Form Id">	 
+        				</div>
+        				<div class="form-check">
+							<input class="form-check-input" type="radio" name="radios" id="exampleRadios1" value="Accept" checked>
+  							<label class="form-check-label" for="exampleRadios1">Accept</label>
+  						</div>
+						<div class="form-check">	
+							<input class="form-check-input" type="radio" name="radios" id="exampleRadios1" value="Deny" checked>
+							<label class="form-check-label" for="exampleRadios1">Deny</label>
+						</div>	
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="radios" id="exampleRadios1" value="Request Additional Information" checked>
+							<label class="form-check-label" for="exampleRadios1">Request More Information</label>
+						</div>
+						<div class="form-group col-12">
+	                        <label for="moreInformation"></label>
+	                        <textarea  id="requestedInfo" class="form-control" id="requestMoreInfo rows="2" placeholder="Request more information here"></textarea>
+                     	 </div>
+                     	 <div class="form-group col-md-3">
+                      	 	<button type="submit" id= "submissionOfForm" class="btn btn-primary">Submit</button>
+                         </div>
+					</form>
+				</div>
+				</div>
+			</div>
+		</div>
+        
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 	<script type="text/javascript"  src="../JS/ViewPendingForms.js"></script>
+  </body>
+</html>

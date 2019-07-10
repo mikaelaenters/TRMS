@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ 	<title>Update Your Final Grade</title>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Mikaela &Co</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="associateHome.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="reimbursementForm.html">Submit A Form</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="UpdateGrade.html">Update Your Final Grade</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="logout">Logout</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Have A Wonderful Day!
+                    </span>
+                </div>
+    	</nav>  
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div>
+        <div id="pendingForms">
+          <table class="table">
+            <thead class="text-center">
+              <tr>
+                <th scope="col">Form</th>
+                <th scope="col">Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Date</th>
+                <th scope="col">Cost</th>
+                <th scope="col">Description</th>
+                <th scope="col">Passing Grade</th>
+                <th scope="col">Current Grade</th>
+              </tr>
+            </thead>
+            <tbody id="newForms" class="text-center"></tbody>
+          </table>
+        </div>
+        <br/><br/><br/>
+	<div class="container-fluid">
+    	<div class="row">
+       		 <div class="col-lg-6">
+             		<div class="card">
+  					<div class="card-header"></div>
+        		<div class="card-body">
+        			<h5 class="card-title">Update Final Grade Information</h5>
+    				<form id="UpdateForm">
+        				<div class="form-group col-md-6">
+            				<label for="formId">Reimbursement Form Id</label>
+            				<input type="number" name="formId" class="form-control" id="applicationId" placeholder="Form Id">	 
+                		</div>
+						<div class="form-group col-6">
+	            <label for="FinalGrade">Final Grade</label>
+	              <textarea  id="finalGradeUpdate" class="form-control" rows="1" placeholder="Submit Your Final Grade"></textarea>
+            </div>
+            <div class="form-group col-md-3">
+            <button type="submit" id= "submissionOfGrade" class="btn btn-primary">Submit</button>
+            </div>
+					</form>
+			</div>
+		</div>
+        	</div>
+        <div class="col-lg-6">
+      <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Updated Funds!</h4>
+                    <p id="userFunds"></p>
+                    <hr>
+                    <p class="mb-0">Please check back later to see if your funds have been approved!</p>
+                </div>
+        </div>
+    </div>
+</div>
+ <br/><br/><br/>
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 	<script type="text/javascript"  src="../JS/UpdateGrade.js"></script>
+  </body>
+</html>
